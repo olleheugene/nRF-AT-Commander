@@ -20,3 +20,8 @@ Please find below supported items.
 
 - Supports interval testing that sends each AT Command with a specific interval time.
 
+---
+
+**There can be a limitation in Windows 11 that takes a long time to execute the program due to checking by Microsoft Defender**
+
+**If it takes a long time, please add an exception in Virus&Threat in Windows Settings**
