@@ -18,6 +18,6 @@ Please find below supported items.
 - Supports sequencial test by selecting each command item.
 - Supports changing the UI color.
 
-* Features don't yet support
+Features don't yet support
 - Sending TAB key directly in Serial widget.
 - Ansi color
