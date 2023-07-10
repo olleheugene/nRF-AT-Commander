@@ -7,7 +7,7 @@
 6 = wifi_radio_test tx_power 15
 7 = wifi_radio_test tx_pkt_gap 4200
 8 = wifi_radio_test tx_pkt_rate 54
-9 = wifi_radio_test tx 1
+9 = 
 10 = 
 11 = 
 12 = 
