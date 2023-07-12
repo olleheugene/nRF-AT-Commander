@@ -1,12 +1,12 @@
-[WiFi_Tx_OFDM_11g]
+[WiFi_Tx_OFDM_11a]
 1 = # 802.11g OFDM Tx Test
 2 = wifi_radio_test tx 0
-3 = wifi_radio_test init 1
-4 = wifi_radio_test tx_pkt_rate 12
-5 = wifi_radio_test tx_pkt_len 4000
-6 = wifi_radio_test tx_power 15
+3 = wifi_radio_test init 36
+4 = wifi_radio_test tx_power 14
+5 = wifi_radio_test tx_pkt_rate 12
+6 = wifi_radio_test tx_pkt_len 4000
 7 = wifi_radio_test tx_pkt_gap 4200
-8 = wifi_radio_test tx_pkt_rate 54
+8 = wifi_radio_test tx 1
 9 = 
 10 = 
 11 = 
@@ -15,17 +15,51 @@
 14 = 
 15 = 
 
-[WiFi_Tx_OFDM_11n]
+[WiFi_Tx_OFDM_11g]
+1 = # 802.11g OFDM Tx Test
+2 = wifi_radio_test tx 0
+3 = wifi_radio_test init 1
+4 = wifi_radio_test tx_power 15
+5 = wifi_radio_test tx_pkt_rate 12
+6 = wifi_radio_test tx_pkt_len 4000
+7 = wifi_radio_test tx_pkt_gap 4200
+8 = wifi_radio_test tx 1
+9 = 
+10 = 
+11 = 
+12 = 
+13 = 
+14 = 
+15 = 
+
+[WiFi_Tx_OFDM_11n_2G]
 1 = # 802.11n OFDM Tx Test
 2 = wifi_radio_test tx 0
 3 = wifi_radio_test init 1
-4 = wifi_radio_test tx_pkt_tput_mode 1
+4 = wifi_radio_test tx_power 16
 5 = wifi_radio_test tx_pkt_mcs 7
 6 = wifi_radio_test tx_pkt_len 4000
-7 = wifi_radio_test tx_power 15
-8 = wifi_radio_test tx_pkt_gap 4200
-9 = wifi_radio_test tx_pkt_rate 54
-10 = wifi_radio_test tx 1
+7 = wifi_radio_test tx_pkt_gap 4200
+8 = wifi_radio_test tx_pkt_tput_mode 1
+9 = wifi_radio_test tx 1
+10 = 
+11 = 
+12 = 
+13 = 
+14 = 
+15 = 
+
+[WiFi_Tx_OFDM_11n_5G]
+1 = # 802.11n OFDM Tx Test
+2 = wifi_radio_test tx 0
+3 = wifi_radio_test init 36
+4 = wifi_radio_test tx_power 14
+5 = wifi_radio_test tx_pkt_mcs 7
+6 = wifi_radio_test tx_pkt_len 4000
+7 = wifi_radio_test tx_pkt_gap 4200
+8 = wifi_radio_test tx_pkt_tput_mode 1
+9 = wifi_radio_test tx 1
+10 = 
 11 = 
 12 = 
 13 = 
@@ -36,13 +70,13 @@
 1 = # 802.11b DSSS Tx Test
 2 = wifi_radio_test tx 0
 3 = wifi_radio_test init 1
-4 = wifi_radio_test tx_pkt_preamble 1
+4 = wifi_radio_test tx_power 21
 5 = wifi_radio_test tx_pkt_rate 1
 6 = wifi_radio_test tx_pkt_len 1024
-7 = wifi_radio_test tx_power 21
-8 = wifi_radio_test tx_pkt_gap 8600
-9 = wifi_radio_test tx_pkt_rate 11
-10 = wifi_radio_test tx 1
+7 = wifi_radio_test tx_pkt_gap 8600
+8 = wifi_radio_test tx_pkt_preamble 1
+9 = wifi_radio_test tx 1
+10 = 
 11 = 
 12 = 
 13 = 
@@ -69,18 +103,18 @@
 [WiFi_ETC_Commands]
 1 = # Getting Temperature
 2 = wifi_radio_test get_temperature
-3 = # Deep Power Down Test
-4 = wifi_radio_test dpd 1
-5 = wifi_radio_test dpd 0
-6 = # Getting RSSI
-7 = wifi_radio_test init 144
-8 = wifi_radio_test get_rf_rssi
-9 = # XO Calibration
-10 = wifi_radio_test init 64
-11 = wifi_radio_test compute_optimal_xo_val
-12 = 
-13 = 
-14 = 
+3 = # Getting RSSI
+4 = wifi_radio_test init 144
+5 = wifi_radio_test get_rf_rssi
+6 = # XO Calibration
+7 = wifi_radio_test init 64
+8 = wifi_radio_test compute_optimal_xo_val
+9 = # Show configuration
+10 = wifi_radio_test show_config
+11 = # Display statistics
+12 = wifi_radio_test get_stats
+13 = # Set XO value
+14 = wifi_radio_test set_xo_val 0
 15 = 
 
 [WiFi_ETC2_Commands]
@@ -106,9 +140,9 @@
 3 = wifi_radio_test rx_capture_length 64
 4 = wifi_radio_test rx_cap 2
 5 = 
-6 = 
-7 = 
-8 = 
+6 = # Deep Power Down Test
+7 = wifi_radio_test dpd 1
+8 = wifi_radio_test dpd 0
 9 = 
 10 = 
 11 = 
@@ -117,15 +151,32 @@
 14 = 
 15 = 
 
-[WiFi_Tx_Test]
+[WiFi_Calibration]
+1 = # Enable/Disable TX DC calibration.
+2 = wifi_radio_test phy_calib_txdc 0
+3 = wifi_radio_test phy_calib_txdc 1
+4 = # Enable/Disable RX DC calibration.
+5 = wifi_radio_test phy_calib_rxdc 0
+6 = wifi_radio_test phy_calib_rxdc 1
+7 = # Enable/Disable TX power calibration.
+8 = wifi_radio_test phy_calib_txpow 0
+9 = wifi_radio_test phy_calib_txpow 1
+10 = # Enable/Disable RX IQ calibration.
+11 = wifi_radio_test phy_calib_rxiq 0
+12 = wifi_radio_test phy_calib_rxiq 1
+13 = # Enable/Disable TX IQ calibration.
+14 = wifi_radio_test phy_calib_txiq 0
+15 = wifi_radio_test phy_calib_txiq 1
+
+[WiFi_Generic_Tx_Test]
 1 = wifi_radio_test tx 0
 2 = wifi_radio_test init 1
-3 = wifi_radio_test tx_pkt_tput_mode 1
-4 = wifi_radio_test tx_pkt_mcs 7
-5 = wifi_radio_test tx_power 16
-6 = wifi_radio_test tx 1
-7 = 
-8 = 
+3 = wifi_radio_test tx_pkt_rate 12
+4 = wifi_radio_test tx_pkt_len 4000
+5 = wifi_radio_test tx_power 14
+6 = wifi_radio_test tx_pkt_gap 4200
+7 = wifi_radio_test tx_pkt_mcs 7
+8 = wifi_radio_test tx 1
 9 = 
 10 = 
 11 = 
@@ -134,7 +185,7 @@
 14 = 
 15 = 
 
-[WiFi_Rx_Test]
+[WiFi_Generic_Rx_Test]
 1 = wifi_radio_test rx 0
 2 = wifi_radio_test init 1
 3 = wifi_radio_test rx 1
@@ -150,4 +201,3 @@
 13 = 
 14 = 
 15 = 
-
