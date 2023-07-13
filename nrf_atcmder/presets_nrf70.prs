@@ -7,13 +7,13 @@
 6 = wifi_radio_test tx_pkt_len 4000
 7 = wifi_radio_test tx_pkt_gap 4200
 8 = wifi_radio_test tx 1
-9 = 
-10 = 
-11 = 
-12 = 
-13 = 
-14 = 
-15 = 
+9 =
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
 
 [WiFi_Tx_OFDM_11g]
 1 = # 802.11g OFDM Tx Test
@@ -24,13 +24,13 @@
 6 = wifi_radio_test tx_pkt_len 4000
 7 = wifi_radio_test tx_pkt_gap 4200
 8 = wifi_radio_test tx 1
-9 = 
-10 = 
-11 = 
-12 = 
-13 = 
-14 = 
-15 = 
+9 =
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
 
 [WiFi_Tx_OFDM_11n_2G]
 1 = # 802.11n OFDM Tx Test
@@ -42,12 +42,12 @@
 7 = wifi_radio_test tx_pkt_gap 4200
 8 = wifi_radio_test tx_pkt_tput_mode 1
 9 = wifi_radio_test tx 1
-10 = 
-11 = 
-12 = 
-13 = 
-14 = 
-15 = 
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
 
 [WiFi_Tx_OFDM_11n_5G]
 1 = # 802.11n OFDM Tx Test
@@ -59,12 +59,12 @@
 7 = wifi_radio_test tx_pkt_gap 4200
 8 = wifi_radio_test tx_pkt_tput_mode 1
 9 = wifi_radio_test tx 1
-10 = 
-11 = 
-12 = 
-13 = 
-14 = 
-15 = 
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
 
 [WiFi_Tx_DSSS_11b]
 1 = # 802.11b DSSS Tx Test
@@ -76,12 +76,12 @@
 7 = wifi_radio_test tx_pkt_gap 8600
 8 = wifi_radio_test tx_pkt_preamble 1
 9 = wifi_radio_test tx 1
-10 = 
-11 = 
-12 = 
-13 = 
-14 = 
-15 = 
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
 
 [WiFi_Tx_Continuous_Tone]
 1 = wifi_radio_test tx 0
@@ -90,15 +90,15 @@
 4 = wifi_radio_test tx_tone_freq 2
 5 = wifi_radio_test tx_tone 1
 6 = wifi_radio_test tx_tone 0
-7 = 
-8 = 
-9 = 
-10 = 
-11 = 
-12 = 
-13 = 
-14 = 
-15 = 
+7 =
+8 =
+9 =
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
 
 [WiFi_ETC_Commands]
 1 = # Getting Temperature
@@ -106,16 +106,16 @@
 3 = # Getting RSSI
 4 = wifi_radio_test init 144
 5 = wifi_radio_test get_rf_rssi
-6 = # XO Calibration
-7 = wifi_radio_test init 64
-8 = wifi_radio_test compute_optimal_xo_val
-9 = # Show configuration
-10 = wifi_radio_test show_config
-11 = # Display statistics
-12 = wifi_radio_test get_stats
+6 = # Show configuration
+7 = wifi_radio_test show_config
+8 = # Display statistics
+9 = wifi_radio_test get_stats
+10 = # XO Calibration
+11 = wifi_radio_test init 64
+12 = wifi_radio_test compute_optimal_xo_val
 13 = # Set XO value
 14 = wifi_radio_test set_xo_val 0
-15 = 
+15 =
 
 [WiFi_ETC2_Commands]
 1 = # Capturing ADC samples with fixed RX gain
@@ -130,26 +130,26 @@
 10 = wifi_radio_test rx_bb_gain 10
 11 = wifi_radio_test rx_capture_length 64
 12 = wifi_radio_test rx_cap 1
-13 = 
-14 = 
-15 = 
+13 =
+14 =
+15 =
 
 [WiFi_ETC3_Commands]
 1 = # Capture AGC adjusted baseband samples after WLAN packet detection
 2 = wifi_radio_test init 144
 3 = wifi_radio_test rx_capture_length 64
 4 = wifi_radio_test rx_cap 2
-5 = 
+5 =
 6 = # Deep Power Down Test
 7 = wifi_radio_test dpd 1
 8 = wifi_radio_test dpd 0
-9 = 
-10 = 
-11 = 
-12 = 
-13 = 
-14 = 
-15 = 
+9 =
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
 
 [WiFi_Calibration]
 1 = # Enable/Disable TX DC calibration.
@@ -177,13 +177,13 @@
 6 = wifi_radio_test tx_pkt_gap 4200
 7 = wifi_radio_test tx_pkt_mcs 7
 8 = wifi_radio_test tx 1
-9 = 
-10 = 
-11 = 
-12 = 
-13 = 
-14 = 
-15 = 
+9 =
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
 
 [WiFi_Generic_Rx_Test]
 1 = wifi_radio_test rx 0
@@ -192,12 +192,12 @@
 4 = #You must wait certain amount time
 5 = wifi_radio_test rx 0
 6 = wifi_radio_test get_stats
-7 = 
-8 = 
-9 = 
-10 = 
-11 = 
-12 = 
-13 = 
-14 = 
-15 = 
+7 =
+8 =
+9 =
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
