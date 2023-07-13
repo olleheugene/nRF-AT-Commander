@@ -6,16 +6,16 @@
 
 The nRF AT Commander tool is designed for ease of testing the Command line based testing Nordic products.
 
-The providing preset items are fit for nRF9160, nRF7002 but you can use any of UART based commands by changing the preset or type on the tool.
+The providing preset items are fit for the nRF91 series, and the nRF70 Series but you can use any of the UART-based commands by changing the preset or type on the tool.
 
-Please find below supported items.
+Please find below the supported items.
 
-- Providing Preset lists for the nRF7002 RF test and the SLM application of nRF916x.
+- Providing Preset lists for the nRF70 Series RF test and the SLM application of the nRF91 series.
 - Supports import and export preset list 
 - You can change the AT command of each by typing on the field.
-- Automatic saving the changed AT commands
+- Automatic saving of the changed AT commands
 - Supports embedded editor for editing the Preset List
-- Supports sequencial test by selecting each command item.
+- Supports sequential tests by selecting each command item.
 - Supports changing the UI color.
 
 Features don't yet support
