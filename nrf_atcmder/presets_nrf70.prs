@@ -201,3 +201,20 @@
 13 =
 14 =
 15 =
+
+[WiFi_FICR_Commands]
+1 = # Read OTP parameters
+2 = wifi_radio_ficr_prog otp_read_params
+3 = # Read OTP state
+4 = wifi_radio_ficr_prog otp_get_status
+5 = # Write OTP Command
+6 = wifi_radio_ficr_prog otp_write_params
+7 = 
+8 = 
+9 =
+10 =
+11 =
+12 =
+13 =
+14 =
+15 =
