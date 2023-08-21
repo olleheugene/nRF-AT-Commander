@@ -1,0 +1,118 @@
+[802154_TX_5340]
+1 = # Set Data Rate
+2 = data_rate ieee802154_250Kbit
+3 = # Set channel
+4 = start_channel 11
+5 = # Set Tx power (3dBm = pos3dBm)
+6 = output_power pos0dBm
+7 = # Set the packet data pattern
+8 = transmit_pattern pattern_11110000
+9 = # Print all setting parameters
+10 = parameters_print
+11 = # Start Tx (Constant tone)
+12 = start_tx_carrier
+13 = 
+14 = 
+15 = 
+
+[802154_TX_52840/833/820]
+1 = # Set Data Rate
+2 = data_rate ieee802154_250Kbit
+3 = # Set channel
+4 = start_channel 11
+5 = # Set Tx power (8dBm = pos8dBm)
+6 = output_power pos8dBm
+7 = # Set the packet data pattern
+8 = transmit_pattern pattern_11110000
+9 = # Print all setting parameters
+10 = parameters_print
+11 = # Start Tx (Constant tone)
+12 = start_tx_carrier
+13 = 
+14 = 
+15 = 
+
+[802154_TX_52811]
+1 = # Set Data Rate
+2 = data_rate ieee802154_250Kbit
+3 = # Set channel
+4 = start_channel 11
+5 = # Set Tx power (4dBm = pos4dBm)
+6 = output_power pos4dBm
+7 = # Set the packet data pattern
+8 = transmit_pattern pattern_11110000
+9 = # Print all setting parameters
+10 = parameters_print
+11 = # Start Tx (Constant tone)
+12 = start_tx_carrier
+13 = 
+14 = 
+15 = 
+
+[802154_MODULATED_TX_5340]
+1 = # Set Data Rate
+2 = data_rate ieee802154_250Kbit
+3 = # Set channel
+4 = start_channel 11
+5 = # Set Tx power (3dBm = pos3dBm)
+6 = output_power pos0dBm
+7 = # Set the packet data pattern
+8 = transmit_pattern pattern_11110000
+9 = # Print all setting parameters
+10 = parameters_print
+11 = # Start modulated Tx
+12 = start_tx_modulated_carrier
+13 = 
+14 = 
+15 = 
+
+[802154_MODULATED_TX_52840/833/820]
+1 = # Set Data Rate
+2 = data_rate ieee802154_250Kbit
+3 = # Set channel
+4 = start_channel 11
+5 = # Set Tx power (8dBm = pos8dBm)
+6 = output_power pos8dBm
+7 = # Set the packet data pattern
+8 = transmit_pattern pattern_11110000
+9 = # Print all setting parameters
+10 = parameters_print
+11 = # Start modulated Tx
+12 = start_tx_modulated_carrier
+13 = 
+14 = 
+15 = 
+
+[802154_MODULATED_TX_52811]
+1 = # Set Data Rate
+2 = data_rate ieee802154_250Kbit
+3 = # Set channel
+4 = start_channel 11
+5 = # Set Tx power (4dBm = pos4dBm)
+6 = output_power pos4dBm
+7 = # Set the packet data pattern
+8 = transmit_pattern pattern_11110000
+9 = # Print all setting parameters
+10 = parameters_print
+11 = # Start modulated Tx
+12 = start_tx_modulated_carrier
+13 = 
+14 = 
+15 = 
+
+[1802154_RX_5340/52840/833/820/811]
+1 = # BLE Rx test
+2 = # Set the packet data pattern
+3 = transmit_pattern pattern_11110000
+4 = # Set channel
+5 = start_channel 11
+6 = # Set Data Rate
+7 = data_rate ieee802154_250Kbit
+8 = # Print all setting parameters
+9 = parameters_print
+10 = # Start Rx   
+11 = start_rx
+12 = # Print_Rx(Set in config for timeout)
+13 = print_rx
+14 = 
+15 = 

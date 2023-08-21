@@ -2,8 +2,6 @@
 
 <img src="https://github.com/olleheugene/nRF-AT-Commander/blob/main/document_resources/nrf_atcommander.gif">
 
-
-
 The nRF AT Commander tool is designed for ease of testing the Command line based testing Nordic products.
 
 The providing preset items are fit for the nRF91 series, and the nRF70 Series but you can use any of the UART-based commands by changing the preset or type on the tool.
@@ -19,5 +17,6 @@ Please find below the supported items.
 - Supports font configuration for serial terminal
 
 Features don't yet support
+
 - Sending TAB key directly in Serial widget.
 - Ansi color

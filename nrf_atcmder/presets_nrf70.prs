@@ -37,10 +37,10 @@
 2 = wifi_radio_test tx 0
 3 = wifi_radio_test init 1
 4 = wifi_radio_test tx_power 16
-5 = wifi_radio_test tx_pkt_mcs 7
+5 = wifi_radio_test tx_pkt_tput_mode 1
 6 = wifi_radio_test tx_pkt_len 4000
 7 = wifi_radio_test tx_pkt_gap 4200
-8 = wifi_radio_test tx_pkt_tput_mode 1
+8 = wifi_radio_test tx_pkt_mcs 7
 9 = wifi_radio_test tx 1
 10 =
 11 =
@@ -54,10 +54,10 @@
 2 = wifi_radio_test tx 0
 3 = wifi_radio_test init 36
 4 = wifi_radio_test tx_power 14
-5 = wifi_radio_test tx_pkt_mcs 7
+5 = wifi_radio_test tx_pkt_tput_mode 1
 6 = wifi_radio_test tx_pkt_len 4000
 7 = wifi_radio_test tx_pkt_gap 4200
-8 = wifi_radio_test tx_pkt_tput_mode 1
+8 = wifi_radio_test tx_pkt_mcs 7
 9 = wifi_radio_test tx 1
 10 =
 11 =
@@ -114,7 +114,7 @@
 11 = wifi_radio_test init 64
 12 = wifi_radio_test compute_optimal_xo_val
 13 = # Set XO value
-14 = wifi_radio_test set_xo_val 0
+14 = wifi_radio_test set_xo_val 37
 15 =
 
 [WiFi_ETC2_Commands]
@@ -175,8 +175,8 @@
 4 = wifi_radio_test tx_pkt_len 4000
 5 = wifi_radio_test tx_power 14
 6 = wifi_radio_test tx_pkt_gap 4200
-7 = wifi_radio_test tx_pkt_mcs 7
-8 = wifi_radio_test tx 1
+7 = wifi_radio_test tx 1
+8 = 
 9 =
 10 =
 11 =
