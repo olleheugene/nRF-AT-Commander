@@ -10,11 +10,16 @@ Please find below the supported items.
 
 - Default provide presets are nRF70 Series RF test and the SLM(Serial LTE Modem) for the nRF91 series
 - Supports import, export, editing presets
-- Supports automatic storing the edited preset in field
+- Supports automatic storing of the edited preset in the field
 - Selectable Light / Dark theme
 - Supports bash command in tool
 - Supports to set different execution times for each command.
 - Supports font configuration for serial terminal
+
+Presets
+- nRF700x WiFi RF Test and FICR
+- nRF91
+- nRF5x series radio test (Bluetooth Low Energy / 2.4GHz proprietary / 802.15.4)
 
 Features don't yet support
 
